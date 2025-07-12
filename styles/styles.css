@@ -93,6 +93,13 @@ fieldset {
     background-color: var(--orange-500);
     color: black;
   }
+  input[type='radio']:checked {
+    background-color: var(--white);
+  }
+
+  input[type='radio']:checked + label {
+    color: black;
+  }
 }
 button {
   margin-top: 1.6rem;
@@ -112,9 +119,7 @@ button:hover {
   background-color: var(--white);
   cursor: pointer;
 }
-.hidden {
-  display: none;
-}
+
 .thank-you-container {
   max-width: 21.8rem;
   max-height: 24rem;
@@ -128,7 +133,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: none;
 
   img {
     width: 9.6rem;
@@ -153,6 +157,9 @@ button:hover {
     font-size: 0.9rem;
   }
 }
+.hidden {
+  display: none;
+}
 
 .attribution {
   font-size: 11px;
@@ -162,4 +169,47 @@ button:hover {
 }
 .attribution a {
   color: var(--white);
+}
+
+@media only screen and (min-width: 53.33rem) {
+  .rating-container {
+    max-width: 27.46rem;
+    max-height: 27.73rem;
+    padding: 2.1rem;
+    h2 {
+      font-size: 1.86rem;
+      line-height: 2.3rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+  }
+  .rating {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  fieldset {
+    gap: 1.6rem;
+  }
+  button {
+    width: 23.4rem;
+  }
+  .thank-you-container {
+    max-width: 27.46rem;
+    max-height: 27.73rem;
+    padding: 2.3rem;
+
+    img {
+      width: 10.8rem;
+      height: 7.2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    p:nth-child(4) {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+  }
 }
