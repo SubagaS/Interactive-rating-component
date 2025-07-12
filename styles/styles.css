@@ -101,7 +101,7 @@ fieldset {
     color: black;
   }
 }
-button {
+.submit-btn {
   margin-top: 1.6rem;
   width: 18.6rem;
   height: 3rem;
@@ -115,7 +115,7 @@ button {
   font-weight: 700;
 }
 
-button:hover {
+.submit-btn:hover {
   background-color: var(--white);
   cursor: pointer;
 }
@@ -192,7 +192,7 @@ button:hover {
   fieldset {
     gap: 1.6rem;
   }
-  button {
+  .submit-btn {
     width: 23.4rem;
   }
   .thank-you-container {
